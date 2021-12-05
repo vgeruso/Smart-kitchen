@@ -2,12 +2,14 @@ import express from 'express';
 
 const routes = express.Router();
 
-routes.get('/', (req, res) => {
+routes.get('/', (_, res) => {
   const object = {
-    server: 'ok',
+    msg: 'Welcome to Stmart Kitcen API',
     status: 200,
   };
   return res.status(object.status).json(object);
 });
 
-export default routes;
+const home = express().use(routes);
+
+export default home;

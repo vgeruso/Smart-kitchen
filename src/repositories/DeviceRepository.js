@@ -105,8 +105,6 @@ const DeviceRepository = {
         }
       );
 
-      console.log(device);
-
       if (device[0] === 1) {
         return {
           msg: 'Device updated',

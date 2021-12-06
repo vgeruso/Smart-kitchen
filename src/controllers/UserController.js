@@ -4,9 +4,12 @@ const UserController = {
   store: async (req, res) => {
     const resp = await UserRepository.add(req.body);
 
-    console.log(resp);
-
     return res.status(resp.status).json(resp);
+  },
+  auth: async (req, res) => {
+    const auth = await UserRepository.login(req.body);
+
+    return res.status(auth.status).json(auth);
   },
   index: async (_, res) => {
     const list = await UserRepository.ListAll();
@@ -37,7 +40,7 @@ const UserController = {
   destroy: async (req, res) => {
     const { credential } = req.params;
 
-    const resp = await UserRepository.drop(credential);
+    const resp = await UserRepository.drop(req.body, credential);
 
     return res.status(resp.status).json(resp);
   },

@@ -14,9 +14,10 @@ routes.get('/', (_, res) => {
 });
 
 routes.post('/add', UserController.store);
+routes.post('/auth', UserController.auth);
 routes.get('/list', UserController.index);
 routes.get('/:name', UserController.getByName);
-routes.get('/:credential', UserController.getByCredential);
+routes.get('/credential/:credential', UserController.getByCredential);
 routes.put('/:credential', UserController.set);
 routes.delete('/:credential', UserController.destroy);
 

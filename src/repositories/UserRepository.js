@@ -40,7 +40,7 @@ const UserRepository = {
         status: 200,
       };
     } catch (err) {
-      console.log(err);
+      console.log(err); // eslint-disable-line
 
       return {
         msg: 'An unexpected error has occurred',
@@ -86,7 +86,7 @@ const UserRepository = {
         status: 200,
       };
     } catch (err) {
-      console.log(err);
+      console.log(err); // eslint-disable-line
 
       return {
         msg: 'An unexpected error has occurred',
@@ -110,7 +110,7 @@ const UserRepository = {
         status: 200,
       };
     } catch (err) {
-      console.log(err);
+      console.log(err); // eslint-disable-line
 
       return {
         msg: 'An unexpected error has occurred',
@@ -140,7 +140,7 @@ const UserRepository = {
         status: 200,
       };
     } catch (err) {
-      console.log(err);
+      console.log(err); // eslint-disable-line
 
       return {
         msg: 'An unexpected error has occurred',
@@ -170,7 +170,7 @@ const UserRepository = {
         status: 200,
       };
     } catch (err) {
-      console.log(err);
+      console.log(err); // eslint-disable-line
 
       return {
         msg: 'An unexpected error has occurred',
@@ -230,7 +230,7 @@ const UserRepository = {
         status: 200,
       };
     } catch (err) {
-      console.log(err);
+      console.log(err); // eslint-disable-line
 
       return {
         msg: 'An unexpected error has occurred',
@@ -280,7 +280,7 @@ const UserRepository = {
         status: 200,
       };
     } catch (err) {
-      console.log(err);
+      console.log(err); // eslint-disable-line
 
       return {
         msg: 'An unexpected error has occurred',

@@ -31,7 +31,7 @@ const DeviceRepository = {
         status: 200,
       };
     } catch (err) {
-      console.log(err);
+      console.log(err); // eslint-disable-line
 
       return {
         msg: 'An unexpected error has occurred',
@@ -55,7 +55,7 @@ const DeviceRepository = {
         status: 200,
       };
     } catch (err) {
-      console.log(err);
+      console.log(err); // eslint-disable-line
 
       return {
         msg: 'An unexpected error has occurred',
@@ -83,7 +83,7 @@ const DeviceRepository = {
         status: 200,
       };
     } catch (err) {
-      console.log(err);
+      console.log(err); // eslint-disable-line
 
       return {
         msg: 'An unexpected error has occurred',
@@ -117,7 +117,7 @@ const DeviceRepository = {
         status: 406,
       };
     } catch (err) {
-      console.log(err);
+      console.log(err); // eslint-disable-line
 
       return {
         msg: 'An unexpected error has occurred',
@@ -145,7 +145,7 @@ const DeviceRepository = {
         status: 200,
       };
     } catch (err) {
-      console.log(err);
+      console.log(err); // eslint-disable-line
 
       return {
         msg: 'An unexpected error has occurred',
